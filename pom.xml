@@ -226,7 +226,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
+<!--
   <reporting>
     <plugins>
       <plugin>
@@ -248,7 +248,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-changes-plugin</artifactId>
-        <version>2.0</version>
+        <version>2.11</version>
         <reportSets>
           <reportSet>
             <reports>
@@ -259,9 +259,9 @@
         </reportSets>
         <configuration>
             <issueLinkTemplate>${jira.browse.url}/%ISSUE%</issueLinkTemplate>
-          <!-- Apache JIRA, Component Engine -->
+          &lt;!&ndash; Apache JIRA, Component Engine &ndash;&gt;
           <component>12311337</component>
-          <!-- FixFor 1.6 -->
+          &lt;!&ndash; FixFor 1.6 &ndash;&gt;
           <filter>fixfor=12310290&amp;sorter/field=issuekey&amp;sorter/order=ASC</filter>
           <maxEntries>100</maxEntries>
           <teamlist>http://velocity.apache.org/who-we-are.html</teamlist>
@@ -317,7 +317,7 @@
         </configuration>
       </plugin>
     </plugins>
-  </reporting>
+  </reporting>-->
 
   <scm>
     <connection>scm:svn:http://svn.apache.org/repos/asf/velocity/engine/branches/1.6.x</connection>
